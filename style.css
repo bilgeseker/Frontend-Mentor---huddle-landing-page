@@ -1,0 +1,136 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-image: url(./images/bg-desktop.svg);
+    background-color: hsl(257, 40%, 49%);
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.logo img {
+    padding: 60px 0 50px 60px;
+    width: 275px;
+}
+
+.container {
+    color: hsl(300, 20%, 94%);
+    align-items: flex-start;
+    justify-content: center;
+    width: auto;
+    margin-left: 55%;
+    padding: 40px;
+    margin-top: -31rem;
+}
+
+.illustration img {
+    width: auto;
+    height: auto;
+    margin: -20px 0 0 60px;
+}
+
+div.container h1.header {
+    line-height: 3rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+div.container p.info {
+    line-height: 1.6rem;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+div.container button.register {
+    padding: 15px 50px 15px 50px;
+    border-radius: 30px;
+    border: none;
+    color: hsl(257, 40%, 49%);
+    font-size: 20px;
+}
+
+div.container button.register:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: #fff;
+}
+
+.socialmedia {
+    color: #fff;
+    width: 8em;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 80%;
+    margin-top: 100px;
+    align-self: center;
+}
+
+.facebook,
+.twitter,
+.insta {
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+.facebook:hover,
+.twitter:hover,
+.insta:hover {
+    color: hsl(300, 69%, 71%);
+    border-color: hsl(300, 69%, 71%);
+}
+@media screen and (max-width: 700px) {
+    body {
+        background-image: url(./images/bg-mobile.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    
+
+    .logo img {
+        padding: 80px 0 50px 40px;
+        width: 200px;
+    }
+
+    .illustration img {
+        object-fit: cover;
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .container {
+        margin: auto;
+        text-align: center;
+        font-size:small;
+    }
+
+    div.container p.info {
+        line-height: 1.5em;
+    }
+
+    div.container button.register {
+        padding: 10px 70px 10px 70px;
+        font-size: 15px;
+    }
+
+    .socialmedia {
+        margin: 40px auto 80px auto;
+        width: 6em;
+    }
+}
